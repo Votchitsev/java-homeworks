@@ -15,9 +15,8 @@ class Account {
 }
 
 class PremiumAccaunt extends Account {
-  double bonus() {
-    double balance = getBalance();
-    return balance * 1.1;
+  void bonus() {
+    deposit(getBalance() * 1.1);
   }
 }
 
